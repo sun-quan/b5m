@@ -3,7 +3,96 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/regist.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
 	</head>
 	<body>
+		<div class="login-register-bg">
+		    <h1 class="lr-logo"><a href="index.html" target="_blank"><img width="130" src="../img/logo.png" 
+		    	alt="帮5买" title="帮5买"></a></h1>
+		    <h2 class="lr-title">帮5买，畅享全球品质生活！</h2>
+		    <div class="lr-mark"><p>欢迎注册</p></div>
+		    <div class="lr-box" id="register-view" >
+		        <form id="registerForm" method="post" novalidate="novalidate">
+
+					<ul>
+                    <li class="kv-item kv-item-mobile">
+				        <p class="kv-input kv-input-pwd">
+				            <input id="mobile" class="kv-text" type="text" maxlength="11" 
+				            	placeholder="验证手机" name="mobile" onpaste="return false" 
+				            	oncopy="return false;" oncut="return false;" 
+				            	tips="完成验证后，您可以用该手机号登录和找回密码">
+				        </p>
+				        <p class="msg-box"></p>
+				    </li>
+
+					<li id="dom-pic-code" class="kv-item kv-item-code">
+						<p class="kv-input kv-input-code ">
+							<input id="pictureCode" class="kv-text" type="text" 
+								placeholder="图片验证码" autocomplete="off" name="pictureCode" 
+								maxlength="4" tips="输入右边图片文字，验证通过后获取短信验证码">
+						</p>
+						<p class="pic-code-b">
+							<b class="pic-code c-reset"><img src="../img/code.png" 
+								title="点一下换一个" alt="点一下换一个"></b>
+
+							<span class="pic-code-reset"><a href="javascript:void(0);" 
+								class="reset-size c-reset">看不清</a><a href="javascript:void(0);" 
+									class="reset-next c-reset">换一换</a>
+							</span>
+						</p>
+						<div class="msg-box"></div>
+					</li>
+
+				    <li id="dom-vali-code" class="kv-item kv-item-code">
+				        <p class="kv-input kv-input-code">
+				            <input id="mobileCode" class="kv-text" type="text" value="" 
+				            	placeholder="手机验证码" autocomplete="off" name="mobileCode">
+				        </p>
+				        <p class="kv-verify">
+				            <a href="javascript:void(0)" class="kv-btn-code msg-code">获取短信验证码</a>
+				        </p>
+				        <p class="msg-box"></p>
+				    </li>
+				    <li class="kv-item kv-item-pwd01">
+				        <p class="kv-input kv-input-pwd">
+				            <input id="password" class="kv-text" type="password" value="" 
+				            	placeholder="请设置密码" name="password" onpaste="return false"
+				            	 oncopy="return false;" oncut="return false;" tips="6-15位字母，建议字母、数字及下划线两种以上组合">
+				        </p>
+				        <p class="msg-box"></p>
+				        <div class="kv-bar" id="testPwd">
+				        	<p class="pwd-power pwd-weak"></p>
+				        </div>
+				    </li>
+				    <li class="kv-item kv-item-pwd02">
+				        <p class="kv-input kv-input-pwd">
+				            <input id="confirmPassword" class="kv-text" type="password" 
+				            	value="" placeholder="请确认密码" name="confirmPassword" 
+				            	onpaste="return false" oncopy="return false;" 
+				            	oncut="return false;" tips="请再次输入密码">
+				        </p>
+				        <p class="msg-box"></p>
+				    </li>
+				    <li id="serror" class="kv-item kv-item-server"></li>
+				    <li class="kv-item kv-item-access">
+				        <input id="J_Access" type="checkbox" class="kv-chk" value="true" >
+				        <label for="J_Access" class="kv-protocol">我已阅读并同意
+				        	<a id="protocol-but" href="javascript:void(0);">《帮5买用户注册协议》</a>
+				        </label>
+				        
+				    </li>
+				    <li class="kv-item kv-item-handler">
+				        <a id="submit_btn" class="kv-submit kv-submit-yellow" target="_self" 
+				        	href="javascript:void(0);">注册</a>
+				    </li>
+				    <li class="kv-item kv-item-handler">
+				        <a class="kv-submit kv-submit-white" href="javascript:void(0);" onclick="this.href = 'this.href = 'http://ucenter.b5m.com/tologin.htm?loginReferer=http://ucenter.b5m.com/nuser/index.htm'" data-mps="PO9">登录</a>
+				    </li>
+					</ul>
+				</form>
+		    </div>
+		</div>
 	</body>
 </html>

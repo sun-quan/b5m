@@ -16,11 +16,17 @@ table { border-spacing:0px; border:none; border-collapse:collapse;}
 body{ color:#333;font:12px/25px "SimSun","宋体","Arial Narrow",HELVETICA; 
 	background:#f7f7f7;/* overflow-y:scroll;*/ overflow-x:hidden;}
 
+/*公共样式*/
+.fl{float: left;}
+.fr{float: right;}
+.fc{float: left;clear: both;overflow: hidden;}
+.dn{display: none;}
+
 /*版心*/
 .layout{width: 1180px;margin: 0 auto;}
 
 /*顶部*/
-.top{height: 24px;background: #f2f2f2;padding: 5px 0;}
+#headerTop{height: 24px;background: #f2f2f2;padding: 5px 0;}
 	
 	.top a:hover{color: #f00;}
 	
@@ -36,34 +42,8 @@ body{ color:#333;font:12px/25px "SimSun","宋体","Arial Narrow",HELVETICA;
 
 		div.top-phone:hover a{display: block;}
 
-/*头部*/
-.header{height: 86px;padding-top: 20px;background: #fff;}
 
-	.header-logo{float: left;margin-right: 100px}
-/*搜索框*/
-	.header-c{float: left;width: 590px;}
-
-		.search-content{width: 590px;height: 40px;margin-bottom:10px;}
-
-			.search-content-input{width: 500px;height: 36px;border: 2px solid #ff5e00;float: left;}
-
-			.search-btn{ width: 80px;height: 40px;background: #ff5e00;color: #fff;
-				font-size: 20px;line-height: 40px;text-align: center;
-				display: block;float: left; }
-
-		.search-hot{width: 590px;height: 20px;}
-
-			.search-hot a{padding: 5px;}
-
-			.red{color: #f00}
-
-	.header-r{width: 250px;float: right;}
-
-		.header-r img{float: left;width: 81px;height: 42px;}
-
-		.header-r a{display: block;width: 86px;height: 40px;background: #ff5e00;float: left;
-			line-height:40px;text-align: center; }
 
 /*底部*/
-.footer{height: 130px;padding-top: 36px;margin: 0 auto;width: 1180px;text-align: center;}
+#footer{height: 130px;padding-top: 36px;margin: 0 auto;width: 1180px;text-align: center;}
 

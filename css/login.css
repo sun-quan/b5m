@@ -1,0 +1,26 @@
+/*登录*/
+.login-register-bg{width: 440px;height: 600px;margin: 100px auto;}
+
+.lr-logo{width: 141px;height: 75px;margin: 0 auto;}
+
+.lr-title{font-size: 34px;font-weight: bold; margin: 40px auto;text-align: center;}
+
+.lr-mark{margin-left: 45px;margin-bottom: 30px;}
+
+.lr-box,#registerForm{width: 350px;min-height: 320px;_height:320px;margin: 0 auto;}
+
+.kv-item{width: 350px;height: 47px;line-height: 47px; background: #fff;
+	border: 1px #e7e7e7 solid;padding-left: 5px;}
+/*验证码*/
+.kv-item-code{margin-top: 10px};
+
+.kv-item-code .kv-input-code{width:145px;height: 47px; display: block;float: left;margin-right: 20px;}
+
+.pic-code-b{width: 200px;height: 44px;display: block;float: left;}
+
+#code{width:145px;height: 47px;}
+
+.pic-code-b .pic-code{width:105px;height: 44px;display: block;float: left;}
+
+.pic-code-b .pic-code-reset{width:72px;height: 36px;display: block;float: left;}
+

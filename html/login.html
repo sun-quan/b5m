@@ -3,7 +3,102 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
 	</head>
 	<body>
+
+		<div class="login-register-bg">
+			<!--logo-->
+		    <h1 class="lr-logo">
+		    	<a href="index.html" target="_blank"><img src="../img/logo.png"  alt="帮5买" title="帮5买"></a>
+		    </h1>
+		    <h2 class="lr-title">帮5买，畅享全球品质生活！</h2>
+		    <div class="lr-mark"><p>使用B5M账户登录</p></div>
+		    <div class="lr-box login-pop-window" id="login-view" data-mps="tologin">
+		        <form id="loginForm" method="post" novalidate="novalidate">
+					<ul>
+				    <input type="hidden" id="loginReferer" name="loginReferer" 
+				    	value="http://ucenter.b5m.com/nuser/index.htm">
+					<!--用户-->
+				    <li class="kv-item kv-item-user fc">
+				        <p class="kv-input kv-input-user">
+				        	
+				            <input id="account" class="kv-text" type="text" 
+				            	placeholder="邮箱/手机" autocomplete="off" value="" 
+				            	name="account" data-mps="PO1">
+				        </p>
+				        <p class="msg-box"></p>
+				    </li>
+				    
+				    <!--密码-->
+				    <li class="kv-item kv-item-pwd fc">
+				        <p class="kv-input kv-input-pwd">
+				        	
+				            <input id="password" class="kv-text" type="password" 
+				            	placeholder="密码" name="password" rel="" onpaste="return false" 
+				            	oncopy="return false;" oncut="return false;" data-mps="PO2">
+				        </p>
+				        <p class="msg-box"></p>
+				        <p class="kv-bar" id="testPwd"></p>
+				        <p id="capitalTips" class="kv-capital">
+				        	<span>大写锁定打开
+				        		<i class="capital-arr-outer"></i><i class="capital-arr-inner"></i>
+				        	</span>
+				        </p>
+				    </li>
+				    <!--验证码-->
+					<li id="dom-pic-code" class="kv-item kv-item-code fc">
+						<p class="kv-input kv-input-code">
+						<input id="code" class="kv-text" type="text" placeholder="请输入验证码" 
+							autocomplete="off" name="code" maxlength="4"
+							tips="输入右边图片文字，验证通过后获取短信验证码">
+						</p>
+						<p class="pic-code-b">
+								<b class="pic-code c-reset"><img id="va-code" src="../img/code.png" 
+									title="点一下换一个" alt="点一下换一个"></b> 
+								<span class="pic-code-reset">
+									<a href="javascript:void(0);" class="reset-size c-reset">看不清</a>
+									<a href="javascript:void(0);" class="reset-next c-reset" >换一换</a> 
+									<a href="javascript:void(0);" class="reset-next c-reset" >换一换</a> 
+								</span>
+						</p>
+						<div class="code-box"></div>
+					</li>
+					<!--错误-->
+				   <!-- <li id="serror" class="kv-item kv-item-server fc"></li>-->
+				    
+				    <!--忘记密码-->
+				    <!--<li class="kv-item kv-item-forget fc">
+				        <span class="forget-link">
+				            <em>忘记密码？</em>
+				            <span class="forget-link-detail">
+				                <a class="icon-forget-mobile" href="" ><i></i>手机账号</a>
+				                <a class="icon-forget-email" href="" ><i></i>邮箱账号</a>
+				                <i class="arr-forget-outer"></i>
+				                <i class="arr-forget-inner"></i>
+				            </span>
+				        </span>
+						<p class="fast-login">
+							<span class="">使用其它账号登录：</span>
+		                    <a href="javascript:;" class="qq">&nbsp;</a>
+		                    <a href="javascript:;" class="weixin" >&nbsp;</a>
+		                    <a href="javascript:;" class="weibo" >&nbsp;</a>
+		                </p>
+				    </li>-->
+				    <!--登录-->
+				    <li class="kv-item kv-item-handler fc">
+				        <a id="submit_btn" class="kv-submit kv-submit-yellow" target="_self" 
+				        	href="javascript:void(0);" >登录</a>
+				    </li>
+				    <!--注册-->
+				    <li class="kv-item kv-item-handler fc">
+				        <a class="kv-submit kv-submit-white" href="javascript:void(0);">注册</a>
+				    </li>
+					</ul>
+					<input type="hidden" name="channel" value="0">
+				</form>
+		    </div>
+		</div>
 	</body>
 </html>
